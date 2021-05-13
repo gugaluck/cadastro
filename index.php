@@ -1,5 +1,5 @@
 <html>
-    <h1>Sistema de cadastro</h1> 
+    <h1>Sistema de cadastro em arquivo .txt</h1> 
     <form method="POST" action="index.php">
         <input type="text" name="nome" placeholder="Digite o nome" /><br>
         <input type="text" name="valor" placeholder="Digite o valor" /><br>
@@ -9,7 +9,7 @@
 </html>
 
 <?php 
-    include ('arquivo.class.php');
+    include ('ler.class.php');
     /*$arquivo = fopen("cadastro.txt") or die("naum foi possível abrir o arquivo");
     if (isset($_POST["arquivo"])) {
         $nome = $_POST['nome'];
