@@ -9,7 +9,6 @@
 </html>
 
 <?php 
-    $arquivo = 'cadastro.txt'; 
     include ('ler.class.php');
     include ('gravar.class.php');
     /*$arquivo = fopen("cadastro.txt") or die("naum foi possível abrir o arquivo");
