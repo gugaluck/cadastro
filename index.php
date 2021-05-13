@@ -16,9 +16,4 @@
         $valor = $_POST['valor'];
         $qtdestoque = $_POST['qtdestoque'];
     }
-    
-    
-    print file_get_contents('cadastro.txt');
-    header ('Location: index.php');
-
 */
