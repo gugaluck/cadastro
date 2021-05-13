@@ -8,7 +8,8 @@
             $this->dados = fopen($this->arquivo, "r");
             $retorno = file_get_contents("cadastro.txt");
               //echo $this->dados;
-              echo $retorno;
+              echo $retorno;;
+              
         }
     }
 
