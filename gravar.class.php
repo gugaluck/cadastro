@@ -5,8 +5,8 @@
         private $nome;
         
         public function __construct() {  
-            $this->dados = fopen($this->arquivo, 'r');
-            $this->nome = $_REQUEST['nome'];
+            $this->dados = fopen($this->arquivo, 'a+');
+            $this->nome = $_POST['nome'];
             $retorno = file_put_contents('cadastro.txt', $this->nome, FILE_USE_INCLUDE_PATH);
             echo $retorno;
         }
