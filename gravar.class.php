@@ -9,6 +9,8 @@
             //$this->nome = $_POST['nome'];
             $retorno = file_put_contents('cadastro.txt', "\n". $_POST['nome'], FILE_APPEND);
         }
-    }
-    
+    }   
+    echo "<script>
+	alert('deu boa piazao');
+	</script>";
     $b = new Gravar;
