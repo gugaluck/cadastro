@@ -11,10 +11,3 @@
 <?php 
     include ('ler.class.php');
     include ('gravar.class.php');
-    /*$arquivo = fopen("cadastro.txt") or die("naum foi possível abrir o arquivo");
-    if (isset($_POST["arquivo"])) {
-        $nome = $_POST['nome'];
-        $valor = $_POST['valor'];
-        $qtdestoque = $_POST['qtdestoque'];
-    }
-*/
