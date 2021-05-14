@@ -2,11 +2,14 @@
     class Abrir {
         private $arquivo = 'cadastro.txt';
         private $dados;
+        private $linha;
 
         public function __construct() {  
-            $this->dados = fopen($this->arquivo, "a+");
-            $retorno = file_get_contents('cadastro.txt', FILE_USE_INCLUDE_PATH);
-            echo $retorno;
+            $this->$dados = fopen("cadastro.txt", "a+");
+            while (!feof($this->$dados)) {
+                $this->$linha = fgets("cadastro.txt", 1024);
+                echo $this->$linha.'<br />';
+            }
         }
     }
 
