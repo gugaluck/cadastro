@@ -8,7 +8,7 @@
             $this->$dados = fopen($this->$arquivo, 'a+');
             while (!feof($this->$dados)) {
                 $this->$linha = fgets($this->$arquivo, 1024);
-                echo $this->$linha.'<br />';
+                echo $this->$linha. '<br />';
             }
         }
     }
