@@ -4,16 +4,12 @@
         private $dados;
         private $linha;
 
-        public function __construct($arquivo) {  
+        public function __construct() {  
             $this->dados = fopen($this->arquivo, 'a+');
-            if ($this->dados) {
-                while (($linha = fgets($this->$arquivo)) !== false) {
-                    //$this->linha = fgets($this->arquivo, 1024);
-                    echo $this->linha. '<br />';
-                }
-                $this->$dados = fclose($this->$arquivo);
-            } else
-                echo 'Arquivo não localizado';
+            while (!feof($this->dados)) {
+                echo fgets($this->dados). "<br />";
+            }
+            fclose($this->arquivo);
         }
     }
     $a = new Abrir;
