@@ -4,13 +4,13 @@
         private $dados;
         private $linha;
 
-        public function __construct() {  
-            $this->$dados = fopen("cadastro.txt", "a+");
+        public function __construct($arquivo) {  
+            $this->$dados = fopen($this->$arquivo, 'a+');
+            
             while (!feof($this->$dados)) {
-                $this->$linha = fgets("cadastro.txt", 1024);
+                $this->$linha = fgets($this->$arquivo, 1024);
                 echo $this->$linha.'<br />';
             }
         }
     }
-
     $a = new Abrir;
