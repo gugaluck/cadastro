@@ -4,12 +4,12 @@
         <input type="text" name="nome" placeholder="Digite o nome" /><br>
         <input type="text" name="valor" placeholder="Digite o valor" /><br>
         <input type="text" name="qtdestoque" placeholder="Digite o quantidade em estoque" /><br>
-        <input type="submit" value="enviar">    
+        <input type="submit" value="Enviar">    
     </form>
 </html>
 
 <?php 
     include ('ler.class.php');
     include ('gravar.class.php');
-    header('Location: index.php');
+    
     
