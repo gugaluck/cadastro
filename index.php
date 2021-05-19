@@ -11,5 +11,3 @@
 <?php 
     include ('ler.class.php');
     include ('gravar.class.php');
-    
-    
