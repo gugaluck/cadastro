@@ -9,5 +9,5 @@
 </html>
 
 <?php 
-    include 'ler.class.php';
-    include 'gravar.class.php';
+    include ('ler.class.php');
+    include ('gravar.class.php');
