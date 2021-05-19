@@ -4,13 +4,10 @@
         private $dados;
         private $nome;
         
-        public function __construct() {  
-            $this->dados = fopen($this->arquivo, 'a+');
+        public function __construct($arquivo) {  
+            $this->$dados = fopen($this->$arquivo, 'a+');
             //$this->nome = $_POST['nome'];
-            $retorno = file_put_contents('cadastro.txt', 'teste'."\n", FILE_APPEND);
+            $this->$retorno = file_put_contents($arquivo, 'teste'."\n", FILE_APPEND);
         }
-    }   
-    /*echo "<script>
-	alert('deu boa piazao');
-	</script>";*/
-    $b = new Gravar;
+    }  
+    $g = new Gravar;
