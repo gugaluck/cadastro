@@ -2,11 +2,12 @@
     class Gravar {
         private $arquivo = 'cadastro.txt';
         private $dados;
-        private $linha;
+        private $nome;
         
-        public function GravarArquivo() {  
+        public function __construct($arquivo) {  
             $this->$dados = fopen($this->$arquivo, 'a+');
-            $this->$linha = file_put_contents($this->$dados, 'teste'."\n", FILE_USE_INCLUDE_PATH);
+            //$this->nome = $_POST['nome'];
+            $this->$retorno = file_put_contents($arquivo, 'teste'."\n", FILE_APPEND);
         }
-    }   
-    $b = new Gravar;
+    }  
+    $g = new Gravar;
