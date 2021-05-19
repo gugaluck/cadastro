@@ -9,10 +9,7 @@
 </html>
 
 <?php 
-    //include ('ler.class.php');
-    //include ('gravar.class.php');
-    $dados = fopen('cadastro.txt', 'a+');
-            while (!feof($dados)) {
-                $linha = fgets('cadastro.txt', 1024);
-                echo $linha. '<br />';
-            }
+    include ('ler.class.php');
+    include ('gravar.class.php');
+    header('Location: index.php');
+    
