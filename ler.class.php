@@ -2,7 +2,6 @@
     class Abrir {
         private $arquivo = 'cadastro.txt';
         private $dados;
-        private $linha;
 
         public function __construct() {  
             $this->dados = fopen($this->arquivo, 'a+');
