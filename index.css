@@ -1,0 +1,21 @@
+h1 {
+    -webkit-box-shadow: 0px 0px 100px -10px #000000; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 4px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px rgba(22,54,218,.33);
+}
+
+input {
+    width: 250px;
+    padding: 5px;
+    height: 40px;
+    margin: 1px 1px;
+    font-size: 18px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(22,54,218,.33);
+}
