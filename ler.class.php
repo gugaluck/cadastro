@@ -9,7 +9,6 @@
                 echo fgets($this->dados). "<br />";
             }
             fclose($this->arquivo);
-            
         }
     }
     
