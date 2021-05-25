@@ -13,6 +13,7 @@
             $this->retorno = file_put_contents($this->arquivo, $_POST['qtdestoque']."\n", FILE_APPEND);
             echo $this->retorno;
             header('Location: index.php');
+        
         }
     }  
     $g = new Gravar();
